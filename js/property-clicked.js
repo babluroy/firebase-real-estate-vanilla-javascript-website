@@ -88,27 +88,27 @@ let property = new Promise(function (resolve, reject) {
       content += '<div class="carousel-inner">';
       content += '<div class="carousel-item active">';
       content +=
-        '<img class="d-block w-100" src="' + image1 + 'alt = "..."' + ">";
+        '<img class="d-block w-100"' + "src=" + image1 + " " + 'alt = "..."' + ">";
       content += "</div>";
       content += '<div class="carousel-item">';
       content +=
-        '<img class="d-block w-100" src="' + image2 + 'alt = "..."' + ">";
+      '<img class="d-block w-100"' + "src=" + image2 + " " + 'alt = "..."' + ">";
       content += "</div>";
       content += '<div class="carousel-item">';
       content +=
-        '<img class="d-block w-100" src="' + image3 + 'alt = "..."' + ">";
+      '<img class="d-block w-100"' + "src=" + image3 + " " + 'alt = "..."' + ">";
       content += "</div>";
       content += '<div class="carousel-item">';
       content +=
-        '<img class="d-block w-100" src="' + image4 + 'alt = "..."' + ">";
+      '<img class="d-block w-100"' + "src=" + image4 + " " + 'alt = "..."' + ">";
       content += "</div>";
       content += '<div class="carousel-item">';
       content +=
-        '<img class="d-block w-100" src="' + image5 + 'alt = "..."' + ">";
+      '<img class="d-block w-100"' + "src=" + image5 + " " + 'alt = "..."' + ">";
       content += "</div>";
       content += '<div class="carousel-item">';
       content +=
-        '<img class="d-block w-100" src="' + image5 + 'alt = "..."' + ">";
+      '<img class="d-block w-100"' + "src=" + image5 + " " + 'alt = "..."' + ">";
       content += "</div>";
       content += "</div>";
       content +=
