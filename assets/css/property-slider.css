@@ -1,0 +1,23 @@
+ .col-md-4 {
+     display: inline-block;
+     margin-left: -4px;
+ }
+ 
+ .col-md-4 img {
+     width: 150%;
+     height: 500px;
+ }
+ /*hide lg slide*/
+ 
+ @media (max-width: 768px) {
+     #slider-property-lg {
+         display: none;
+     }
+ }
+ /*hide sm slide*/
+ 
+ @media (min-width: 768px) {
+     #slider-property-sm {
+         display: none;
+     }
+ }

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>DevBud</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/property-upload.css" rel="stylesheet">
+    <!-- =======================================================
+  * Template Name: FlexStart - v1.1.1
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top" style="background-color: #fff;">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="">
+                <span>DevBud</span>
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="personal-rooms.html">Personal Rooms</a></li>
+                    <li><a class="nav-link scrollto" href="shared-rooms.html">Shared Rooms</a></li>
+                    <li><a class="nav-link scrollto" href="apartments.html">Entire Apartment</a></li>
+                    <li><a class="getstarted scrollto" href="property upload.html">Become a Host</a></li>
+                    <li>
+                        <div class="dropdown"> 
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item signup-btn-nav" href="Login.html">SignUp/Login</a>
+                            <a class="dropdown-item" href="my_bookings.html">Bookings</a>
+                            <a class="dropdown-item" href="my-profile.html">My Profile</a>
+                            <a class="dropdown-item logout-btn"  onclick="signout()">Logout</a>
+                          </div>
+                        </div>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+
+    <section class="property-upload my-5">
+
+        <div class="assessment-container container">
+            <div class="row">
+                <div class="col-md-12 form-box">
+                    <form role="form" class="registration-form" id="propery-upload-form" action="javascript:void(0);">
+                        <fieldset>
+                            <div class="form-top pt-3">
+                                <div class="form-top-left">
+                                    <h3><span></span>Become a Host (Step 1 of 4)</h3>
+                                    <p>Features
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="form-bottom">
+                                <div class="row">
+
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="living_room">Living Room</label>
+                                        <select class="form-control" id="living_room">
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                                </select>
+                                    </div>
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="living_room">Internet</label>
+                                        <select class="form-control" id="internet">
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                                </select>
+                                    </div>
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="tv">TV</label>
+                                        <select class="form-control" id="tv">
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                                </select>
+                                    </div>
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="tv_cable">TV Cable</label>
+                                        <select class="form-control" id="tv_cable">
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                                </select>
+                                    </div>
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="generator">Generator</label>
+                                        <select class="form-control" id="generator">
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                                </select>
+                                    </div>
+
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="laundry">Laundry</label>
+                                        <select class="form-control" id="laundry">
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                                </select>
+                                    </div>
+
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="wifi">WiFi</label>
+                                        <select class="form-control" id="wifi">
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                                </select>
+                                    </div>
+
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="gym">Gym</label>
+                                        <select class="form-control" id="gym">
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                                </select>
+                                    </div>
+
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="reception">Reception</label>
+                                        <select class="form-control" id="reception">
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                                </select>
+                                    </div>
+
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="parking_space">Parking space</label>
+                                        <select class="form-control" id="parking_space">
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                                </select>
+                                    </div>
+
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="air_conditioner">Air conditioner</label>
+                                        <select class="form-control" id="air_conditioner">
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                                </select>
+                                    </div>
+
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="gated_security">Gated Security</label>
+                                        <select class="form-control" id="gated_security">
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                                </select>
+                                    </div>
+
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        <label for="water_supply">Water Supply</label>
+                                        <select class="form-control" id="water_supply">
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                                </select>
+                                    </div>
+
+                                </div>
+                                <button type="button" class="btn btn-next mt-2" style="background-color:#1B98F5">Next</button>
+                                <!-- <button type="submit" class="btn" >Submit</button> -->
+                            </div>
+
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-top pt-3">
+                                <div class="form-top-left">
+                                    <h3><span></span>Become a Host (Step 2 of 4)</h3>
+                                    <p>General Details
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-bottom">
+                                <div class="row">
+                                    <div class="form-group col-md-6 col-sm-6">
+                                        <input type="text" class="form-control" placeholder="Property Name" id="property_name">
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6">
+                                        <input type="text" class="form-control" placeholder="Property Location" id="property_location">
+                                    </div>
+                                    <div class="form-group col-md-3 col-sm-6">
+                                        <input type="text" class="form-control" placeholder="Price Per Night" id="price_per_night">
+                                    </div>
+                                    <div class="form-group col-md-3 col-sm-6">
+                                        <input type="text" class="form-control" placeholder="Weekend Price" id="weekend_price">
+                                    </div>
+                                    <div class="form-group col-md-3 col-sm-6">
+                                        <input type="text" class="form-control" placeholder="Monthly Price" id="monthly_price">
+                                    </div>
+                                    <div class="form-group col-md-3 col-sm-6">
+                                        <input type="text" class="form-control" placeholder="Yearly Price" id="yearly_price">
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-3">
+                                        <label for="property_category">Property Category</label>
+                                        <select class="form-control" id="property_category">
+                                            <option>Select</option>
+                                            <option value="Personal">Personal (Not shared with host)</option>
+                                            <option value="Shared">Shared (Shared with host)</option>
+                                            <option value="Entire Place/Apartment">Entire Place/Apartment</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+
+                                        <div class="form-group col-md-12 col-sm-12">
+                                            <label for="accommodation">Accommodation (i.e. number of guests)</label>
+                                            <select class="form-control" id="accommodation">
+                                                <option>Select</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6+">6+</option>
+                                                <option value="No preference">No preference</option>
+                                              
+                                                </select>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <input type="number" class="form-control" placeholder="Number of Bedrooms" id="bedrooms">
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <input type="number" name="number" class="form-control" placeholder="Number of Bathrooms" id="bathrooms">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <!-- 
+                                    <label>&nbsp;About this listing</label> -->
+                                    <textarea type="text" name="about" class="form-control" placeholder="About this Listing" rows="4" id="about"></textarea>
+
+                                </div>
+                                <button type="button" class="btn btn-previous mt-2">Previous</button>
+                                <button type="button" class="btn btn-next mt-2" style="background-color:#1B98F5">Next</button>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-top pt-3">
+                                <div class="form-top-left">
+                                    <h3><span></span>Become a Host (Step 3 of 4)</h3>
+                                    <p>General Details
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="form-bottom">
+                                <!-- <small><b></b></small> -->
+                                <button class="btn btn-warning" style="background-color: #eb974a;cursor: unset;">All the five pictures are compulsory to upload</button><br><br>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3">
+                                            <div class="form-group file-input">
+                                                <input type="file" class="form-control" id="file_1">
+                                                <span class='button'>Add Image here</span>
+                                                <span class='label file-name-1' data-js-label>No file selected</label>
+                                        </div>
+                                    </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="form-group file-input">
+                                                <input type="file" class="form-control" id="file_2">
+                                                <span class='button'>Add Image here</span>
+                                                <span class='label file-name-2' data-js-label>No file selected</label>
+                                            </div>
+                                        </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-group file-input">
+                                                    <input type="file" class="form-control" id="file_3">
+                                                    <span class='button'>Add Image here</span>
+                                                <span class='label file-name-3' data-js-label>No file selected</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="form-group file-input">
+                                                    <input type="file" class="form-control" id="file_4">
+                                                    <span class='button'>Add Image here</span>
+                                                <span class='label file-name-4' data-js-label>No file selected</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="form-group file-input">
+                                                <input type="file" class="form-control" id="file_5">
+                                                <span class='button'>Add Image here</span>
+                                                <span class='label file-name-5' data-js-label>No file selected</label>
+                                        </div>
+                                    </div>
+                                    
+                                        <!--<label>Image URL</label>-->
+                                        <input type="hidden" name="image" id="image1">
+                                        <!--Image Url for realtime database-->
+                                     
+                                      
+                                        <!--<label>Image URL</label>-->
+                                        <input type="hidden" name="image" id="image2">
+                                        <!--Image Url for realtime database-->
+                                     
+                                    
+                                        <!--<label>Image URL</label>-->
+                                        <input type="hidden" name="image" id="image3">
+                                        <!--Image Url for realtime database-->
+                                    
+                                     
+                                        <!--<label>Image URL</label>-->
+                                        <input type="hidden" name="image" id="image4">
+                                        <!--Image Url for realtime database-->
+                                    
+                                     
+                                        <!--<label>Image URL</label>-->
+                                        <input type="hidden" name="image" id="image5">
+                                        <!--Image Url for realtime database-->
+                                        <!-- <div class="row">
+                                            <div class="col-md-3 col-lg-3 col-sm-12">
+                                                <button class="btn btn-success">1st image uploaded</button>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 col-sm-12">
+                                                <button class="btn btn-success">2nd image uploaded</button>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 col-sm-12">
+                                                <button class="btn btn-success">3rd image uploaded</button>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 col-sm-12">
+                                                <button class="btn btn-success">4th image uploaded</button>
+                                            </div>
+                                        </div> -->
+
+                                        <div class="row toast-div" style="display: none;">
+                                            <div class="col-md-3 col-lg-3 col-sm-6">
+                                                <div class="toast" id="toast_one" role="alert" aria-live="assertive" aria-atomic="true">
+                                                    <div class="toast-header">
+                                                      <strong class="mr-auto">DevBud</strong>
+                                                    </div>
+                                                    <div class="toast-body">
+                                                      1st image uploaded.
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 col-sm-6">
+                                              <div class="toast" id="toast_two" role="alert" aria-live="assertive" aria-atomic="true">
+                                                <div class="toast-header">
+                                                  <strong class="mr-auto">DevBud</strong>
+                                                </div>
+                                                <div class="toast-body">
+                                                  2nd image uploaded.
+                                                </div>
+                                              </div>
+                                              </div>
+                                              <div class="col-md-3 col-lg-3 col-sm-6">
+                                                <div class="toast" id="toast_three" role="alert" aria-live="assertive" aria-atomic="true">
+                                                  <div class="toast-header">
+                                                    <strong class="mr-auto">DevBud</strong>
+                                                  </div>
+                                                  <div class="toast-body">
+                                                    3rd image uploaded.
+                                                  </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-md-3 col-lg-3 col-sm-6">
+                                                    <div class="toast" id="toast_four" role="alert" aria-live="assertive" aria-atomic="true">
+                                                      <div class="toast-header">
+                                                        <strong class="mr-auto">DevBud</strong>
+                                                      </div>
+                                                      <div class="toast-body">
+                                                        4th image uploaded.
+                                                      </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-6 col-sm-6">
+                                                        <div class="toast" id="toast_five" role="alert" aria-live="assertive" aria-atomic="true">
+                                                          <div class="toast-header">
+                                                            <strong class="mr-auto">DevBud</strong>
+                                                          </div>
+                                                          <div class="toast-body">
+                                                            4th image uploaded.
+                                                          </div>
+                                                        </div>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                        <div class="col-md-3 col-lg-3 col-sm-12">
+                                          <button class="uploading-message-button" id="text" style="font-size: 13px;" disabled></button>
+                                        </div>
+                                        <div class="col-md-3 col-lg-3 col-sm-12">
+                                          <button class="uploading-message-button" id="text2" style="font-size: 13px;" disabled></button>
+                                          </div>
+                                          <div class="col-md-3 col-lg-3 col-sm-12">
+                                          <button class="uploading-message-button" id="text3" style="font-size: 13px;" disabled></button>
+                                          </div>
+                                          <div class="col-md-3 col-lg-3 col-sm-12">
+                                          <button class="uploading-message-button" id="text4" style="font-size: 13px;" disabled></button>
+                                          </div>
+                                          <div class="col-md-12 col-lg-12 col-sm-12">
+                                          <button class="uploading-message-button" id="text5" style="font-size: 13px;" disabled></button>
+                                          </div>
+                                        </div>
+                                     
+                                     </div>
+                                </div>
+                                <button type="button" class="btn btn-previous mt-2">Previous</button>
+                                <button type="button" class="btn btn-next mt-2" style="background-color:#1B98F5">Next</button>
+                                <!-- <button type="submit" class="btn" >Submit</button> -->
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div class="form-top pt-3">
+                                <div class="form-top-left">
+                                    <h3><span></span>Become a Host (Step 4 of 4)</h3>
+                                                <p>Terms & rules
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="form-bottom">
+
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="form-group col-md-4 col-sm-12">
+                                                        <label for="smoking">Smoking Allowed</label>
+                                                        <select class="form-control" id="smoking">
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-4 col-sm-12">
+                                                        <label for="pets">Pets Allowed</label>
+                                                        <select class="form-control" id="pets">
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                        </select>
+                                                    </div>
+
+                                                    <div class="form-group col-md-4 col-sm-12">
+                                                        <label for="party">Party Allowed</label>
+                                                        <select class="form-control" id="party">
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                        </select>
+                                                    </div>
+
+                                                    <div class="form-group col-md-4 col-sm-12">
+                                                        <label for="children_allowed">Children Allowed</label>
+                                                        <select class="form-control" id="children_allowed">
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                        </select>
+                                                    </div>
+
+                                                    <div class="form-group col-md-8 col-sm-12">
+                                                        <label for="additional_rules">Additional rules information</label>
+                                                        <input type="text" class="form-control" placeholder="Additional rules information" id="additional_rules">
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-previous mt-2">Previous</button>
+                                            <!-- <button type="button" class="btn btn-next mt-2" style="background-color:#1B98F5">Next</button> -->
+                                            <button type="submit" class="btn mt-2" style="background-color: #1FAA59">Submit</button>
+                                        </div>
+                        </fieldset>
+
+                    </form>
+                    </div>
+                    </div>
+                    </div>
+    </section>
+
+    <input id="today_field" hidden>
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <a href="Login.html">
+                    <center><button type="button" class="btn btn-dark btn-lg btn-block signup-btn my-5">Sign Up Now!</button></center>
+                   
+                </a>
+                <div class="row gy-4">
+                    <div class="col-lg-6 col-md-12 footer-info">
+                        <a href="index.html" class="logo d-flex align-items-center">
+                            <img src="assets/img/logo.png" alt="">
+                            <span>DevBud</span>
+                        </a>
+                        <p class="text-justify">DevBud is focused on creating a society where every home is affordable and accessible to all. You can host your free bed space, vacant rooms or entire houses for free. You can also find cool roommies to split the bill with.
+                            With DevBud, you can live the life you deserve.</p>
+                        <div class="social-links mt-3">
+                            <a href="https://twitter.com/DevBud" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="https://m.facebook.com/DevBud" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/DevBud_official/" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/DevBud" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 footer-links">
+                        <h4>&nbsp;&nbsp;About us</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="about.html">About DevBud</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="index.html#how-it-works">How it works</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="terms.html">Terms of service</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                        <h4>Contact Us</h4>
+                        <strong>E-mail:</strong> <a href="mailto:info@DevBud.com">info@DevBud.com</a><br><br>
+                        <strong>Phone:</strong> +234 (706) 856-4512<br><br>
+                        <strong>Mon-Fri:</strong> 9am-8:30pm<br><br>
+                        <strong>Weekends:</strong> 10am-7:30pm<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright"> &copy; Copyright <strong><span>DevBud</span></strong>. All Rights Reserved </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+          class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/step-form.js"></script>
+    <script src="https://use.fontawesome.com/0ce6411363.js"></script>
+    
+
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+
+    <script src="js/config.js"></script>
+    <script src="js/user-info-checks.js"></script>
+    <script src="js/common-auth-btns.js"></script>
+    <script src="js/auth-check.js"></script>
+    <script src="js/submit-property.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/profile-who-check-from-property-upload-page.js"></script>
+    <script src="js/profile-you-check-from-property-upload-page.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+   <script>
+ 
+    
+   </script>
+</body>
+
+</html>

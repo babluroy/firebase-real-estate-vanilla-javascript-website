@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>DevBud</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/spinner-featured.css" rel="stylesheet">
+    <!--new font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="">
+                <span>DevBud</span>
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="personal-rooms.html">Personal Rooms</a></li>
+                    <li><a class="nav-link scrollto" href="shared-rooms.html">Shared Rooms</a></li>
+                    <li><a class="nav-link scrollto" href="apartments.html">Entire Apartment</a></li>
+                    <li><a class="getstarted scrollto" href="property upload.html">Become a Host</a></li>
+                    <li>
+                        <div class="dropdown"> 
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item signup-btn-nav" href="Login.html">SignUp/Login</a>
+                            <a class="dropdown-item" href="my_bookings.html">Bookings</a>
+                            <a class="dropdown-item" href="my-profile.html">My Profile</a>
+                            <a class="dropdown-item logout-btn"  onclick="signout()">Logout</a>
+                          </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h1 data-aos="fade-up"> Live the life you deserve.</h1>
+                    <!-- <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented designers making websites with Bootstrap
+            </h2> -->
+
+            <!--search-->
+            <!--lg-->
+            <div class="card text-center lg-search bg-light" style="border-radius: 25px;">
+                <div class="card-body">
+                 <div class="row">
+                     <div class="col-md-12 col-lg-12 col sm-12">
+                    <label for="exampleInputEmail1"><b>Search By Location</b></label>
+                    <input type="text" class="form-control" id="location" style="border-radius: 20px;" placeholder="Location...">
+                     </div>
+                  <a id="link"><button class="btn btn-secondary mt-4" style="border-radius: 25px;">Search</button></a>
+                 </div>
+                
+                </div>
+              </div>
+            <!---->
+            <!---->
+            <!--sm-->
+            <div class="card text-center lg-sm bg-light" style="border-radius: 25px;">
+                <div class="card-body">
+                 <div class="row">
+                     <div class="col-md-12 col-lg-12 col sm-12">
+                    <input type="text" class="form-control" id="location_mobile" style="border-radius: 20px;" placeholder="Search Location">
+                     </div>
+                     <a href="" id="link_mobile"><button class="btn btn-secondary mt-4"  style="border-radius: 25px;">Search</button></a>
+                 </div>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            <!---->
+           
+                    <!-- <div data-aos="fade-up" data-aos-delay="600">
+                        <div class="text-center text-lg-start">
+                            <a href="#services" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                <span>Get Started</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                    <img src="pictures/undraw_best_place_r685.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+
+          
+
+              
+        </div>
+    </section>
+    <!-- End Hero -->
+    <main id="main">
+
+
+        <!-- ======= Values Section ======= -->
+        <!-- <section id="values" class="values">
+            <div class="container" data-aos="fade-up">
+                <header class="section-header">
+                    <p>Our Featured Homes</p>
+                </header>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="box" data-aos="fade-up" data-aos-delay="200">
+                            <div class="text-container">
+                                <img src="pictures/pexels-mark-mccammon-1080721.jpg" class="img-fluid" alt="">
+                                <div class="image-texts"> $525 / Night</div>
+                            </div>
+                            <h3>Full House For Families</h3>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> 2601 Mariposa St, San Francisco, CA 94110</p>
+                            <p><i class="fa fa-bed" aria-hidden="true"></i> 2 Bedrooms &nbsp;&nbsp;&nbsp;<i class="fa fa-shower" aria-hidden="true"></i> 2 Baths &nbsp;&nbsp;&nbsp; <i class="fa fa-users" aria-hidden="true"></i> 4 Guests
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box" data-aos="fade-up" data-aos-delay="200">
+                            <div class="text-container">
+                                <img src="pictures/pexels-terry-magallanes-2635038.jpg" class="img-fluid" alt="">
+                                <div class="image-texts"> $455 / Night</div>
+                            </div>
+                            <h3>Full House For Families</h3>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> 2601 Mariposa St, San Francisco, CA 94110</p>
+                            <p><i class="fa fa-bed" aria-hidden="true"></i> 2 Bedrooms &nbsp;&nbsp;&nbsp;<i class="fa fa-shower" aria-hidden="true"></i> 2 Baths &nbsp;&nbsp;&nbsp; <i class="fa fa-users" aria-hidden="true"></i> 4 Guests
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box" data-aos="fade-up" data-aos-delay="200">
+                            <div class="text-container">
+                                <img src="pictures/pexels-pixabay-53610.jpg" class="img-fluid" alt="">
+                                <div class="image-texts"> $129 / Night</div>
+                            </div>
+                            <h3>Full House For Families</h3>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> 2601 Mariposa St, San Francisco, CA 94110</p>
+                            <p><i class="fa fa-bed" aria-hidden="true"></i> 2 Bedrooms &nbsp;&nbsp;&nbsp;<i class="fa fa-shower" aria-hidden="true"></i> 2 Baths &nbsp;&nbsp;&nbsp; <i class="fa fa-users" aria-hidden="true"></i> 4 Guests
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- End Values Section -->
+
+        <section id="values" class="values">
+            <div class="container" data-aos="fade-up">
+                <header class="section-header">
+                    <p>Our Featured Homes</p>
+                </header>
+                <div id="featured">
+                    <!---->
+                    <center>
+                        <div id="loader">
+                            <div class="sk-folding-cube">
+                                <div class="sk-cube1 sk-cube"></div>
+                                <div class="sk-cube2 sk-cube"></div>
+                                <div class="sk-cube4 sk-cube"></div>
+                                <div class="sk-cube3 sk-cube"></div>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services">
+            <div class="container" data-aos="fade-up">
+                <header class="section-header-categories">
+                    <h2>Explore our selection of the best places</h2>
+                    <p>Live Anywhere</p>
+                </header>
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-box blue">
+                            <a href="personal-rooms.html">
+                                <!-- <i class="ri-discuss-line icon"></i> -->
+                                <img src="pictures/rooms.jpg" class="img-fluid img-thumbnail">
+                                <h3 class="my-4">Personal Rooms</h3>
+                                <p class="text-dark">Find rooms you won't have to share with anyone.</p>
+                                <!-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-box blue">
+                            <a href="shared-rooms.html">
+                                <!-- <i class="ri-discuss-line icon"></i> -->
+                                <img src="pictures/shared room.jpg" class="img-fluid img-thumbnail">
+                                <h3 class="my-4">Shared Rooms</h3>
+                                <p class="text-dark">Find rooms to share and live affordably with the perfect roommates.</p>
+                                <!-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-box blue">
+                            <a href="apartments.html">
+                                <!-- <i class="ri-discuss-line icon"></i> -->
+                                <img src="pictures/home.jpg" class="img-fluid img-thumbnail">
+                                <h3 class="my-4">Entire Place/Apartment</h3>
+                                <p class="text-dark">Rent an entire house, where the owner has traveled or doesn't live there anymore.</p>
+                                <!-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
+                        </div>
+                        </a>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Services Section -->
+        <section class="modern-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="container">
+                                    <h2 class="font-weight-bolderm modern-title p-2">No Home is Beyond You</h2>
+                                    <p class="h2 modern-price p-2">$29 at night</p>
+                                    <p class="p-2">If you find a property you absolutely  love, but the price exceeds your budget, click the split-rent button to invite relevant renters to view the property and chat with you. Truly, you deserve nothing but the best.
+                                    </p>
+                                    <a href="#hero"><button class="btn">Book now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="find-roommates-shared-rooms">
+
+            <div class="container">
+                <h2 class="text-dark display-6">Find Roommates in Shared Rooms
+                    <!-- <button class="btn btn-light">Explore All</button> -->
+                </h2>
+                <p class="text-light text-muted">When you leverage on the power of a roommate,you get more with less</p>
+            </div>
+            <div class="col align-self-end">
+
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="card">
+                            <img src="pictures/undraw_people_tax5.svg" class="card-img-top" alt="...">
+                            <div class="card-body find-roommates-shared-rooms-card-body text-center">
+                                <div class="card-title">Two Pockets are better than one.</div>
+                                <p>You don't have to spend all your money on accomodation.Find someone and share the cost together</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="card">
+                            <img src="pictures/undraw_celebration_0jvk.svg" class="card-img-top" alt="...">
+                            <div class="card-body find-roommates-shared-rooms-card-body text-center">
+                                <div class="card-title">Make New Friends</div>
+                                <p>We let you meet with people you will absolutely love since you get to select the personality traits of potential roommates</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="card">
+                            <img src="pictures/undraw_fans_gr54.svg" class="card-img-top" alt="...">
+                            <div class="card-body find-roommates-shared-rooms-card-body text-center">
+                                <div class="card-title">Live the Life You Deserve</div>
+                                <p>A three bedroom apartment in banana island is a piece of cake. You & your friends can combine your money to rent well built & furnished apartments.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- <center><button class="btn btn-light my-4">Explore All</button></center> -->
+            </div>
+
+        </section>
+        <!--Find a place section-->
+
+        <section class="host-guests">
+            <div class="container">
+                <header class="section-header-categories">
+                    <h2>Earn Cool Returns By Accomodating Guests Who Choose to Lodge at Your Place</h2>
+                    <p>Host Verified Guests</p>
+                </header>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-12 col-12 mt-4">
+
+                        <img class="card-img-top circular--square" src="pictures/v (3).jpg" alt="Card image cap">
+
+                        <center><a href="property upload.html"><button class="btn btn-dark mt-4">Host a guest for a Day</button></a></center>
+                    </div>
+
+                    <div class="col-md-3 col-lg-3 col-sm-12 col-12 mt-4">
+
+                        <img class="card-img-top circular--square" src="pictures/week.jpg" alt="Card image cap">
+
+                        <center><a href="property upload.html"><button class="btn btn-dark mt-4">Host a guest for a Week</button></a></center>
+                    </div>
+
+                    <div class="col-md-3 col-lg-3 col-sm-12 col-12 mt-4">
+
+                        <img class="card-img-top circular--square" src="pictures/v (1).jpg" alt="Card image cap">
+
+                        <center><a href="property upload.html"><button class="btn btn-dark mt-4">Host a guest for a Month</button></a></center>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-12 col-12 mt-4">
+
+                        <img class="card-img-top circular--square" src="pictures/year.jpg" alt="Card image cap">
+
+                        <center><a href="property upload.html"><button class="btn btn-dark mt-4">Host a guest for a Year</button></a></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Recent Blog Posts Section -->
+    </main>
+    <!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <a href="Login.html">
+                    <center><button type="button" class="btn btn-dark btn-lg btn-block signup-btn my-5">Sign Up Now!</button></center>
+                </a>
+                <div class="row gy-4">
+                    <div class="col-lg-6 col-md-12 footer-info">
+                        <a href="index.html" class="logo d-flex align-items-center">
+                            <img src="assets/img/logo.png" alt="">
+                            <span>DevBud</span>
+                        </a>
+                        <p class="text-justify">DevBud is focused on creating a society where every home is affordable and accessible to all. You can host your free bed space, vacant rooms or entire houses for free. You can also find cool roommies to split the bill with.
+                            With DevBud, you can live the life you deserve.</p>
+                        <div class="social-links mt-3">
+                            <a href="https://twitter.com/DevBud" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="https://m.facebook.com/DevBud" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/DevBud_official/" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/DevBud" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 footer-links">
+                        <h4>&nbsp;&nbsp;About us</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="about.html">About DevBud</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="index.html#how-it-works">How it works</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="terms.html">Terms of service</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                        <h4>Contact Us</h4>
+                        <strong>E-mail:</strong> <a href="mailto:info@DevBud.com">info@DevBud.com</a><br><br>
+                        <strong>Phone:</strong> +234 (706) 856-4512<br><br>
+                        <strong>Mon-Fri:</strong> 9am-8:30pm<br><br>
+                        <strong>Weekends:</strong> 10am-7:30pm<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright"> &copy; Copyright <strong><span>DevBud</span></strong>. All Rights Reserved </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://use.fontawesome.com/0ce6411363.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/common-auth-btns.js"></script>
+    <script src="js/featured-homes.js"></script>
+    <script src="js/search-bar.js"></script>
+</body>
+
+</html>

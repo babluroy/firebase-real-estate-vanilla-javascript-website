@@ -1,0 +1,377 @@
+@media only screen and (min-width: 600px) {
+  .find-place {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .find-place {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+/*Featured*/
+
+.image-texts {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  background-color: #1266f1;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.text-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/**/
+
+/*Category*/
+
+.image-texts-category {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-container-category {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/**/
+
+.section-header-categories {
+  /* text-align: center; */
+  padding-bottom: 40px;
+}
+
+.section-header-categories h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #4154f1;
+  text-transform: uppercase;
+}
+
+.section-header-categories p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #012970;
+}
+
+@media (max-width: 768px) {
+  .section-header-categories p {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+.roommates-img {
+  max-height: 90px;
+  border-radius: 50px;
+  width: 90px;
+  height: 150px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.text-container {
+  display: inline-block;
+  width: calc(100% - 60px);
+  /** containers width - img width - margin-left **/
+  /* margin-left: 10px; */
+  white-space: normal;
+  vertical-align: middle;
+}
+
+.container-img {
+  width: 200px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  /** force the elements to stay side by side **/
+}
+
+.find-place .card-body:hover {
+  background-color: #012970;
+  color: #fff;
+}
+
+.find-place .card-img-top:hover {
+  -ms-transform: scale(1.5);
+  /* IE 9 */
+  -webkit-transform: scale(2.5);
+  /* Safari 3-8 */
+  transform: scale(1.02);
+}
+
+.find-place .btn {
+  width: 300px;
+}
+
+/*Find-roommates-shared-rooms*/
+
+.find-roommates-shared-rooms {
+  background-color: rgb(221, 219, 219);
+}
+
+.find-roommates-shared-rooms-card-body {
+  background-color: rgb(51, 49, 49);
+  color: #fff;
+}
+
+.find-roommates-shared-rooms .card-img-top {
+  height: 250px;
+}
+
+/* .find-roommates-shared-rooms .btn{
+  background-color: #fff;
+} */
+
+@media (max-width: 768px) {
+  .find-roommates-shared-rooms .card {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .host-guests .card {
+    margin-bottom: 15px;
+  }
+}
+
+.user-info {
+  margin-top: 50px;
+}
+
+.logout-btn {
+  cursor: pointer;
+}
+
+.successfull .card {
+  margin-top: 20%;
+}
+
+.listings .slide:hover {
+  transform: scale(1.02);
+  border-radius: 25px;
+}
+
+.listings a {
+  color: #000;
+}
+
+.listings .card {
+  cursor: pointer;
+}
+
+.property {
+  margin-top: 20px;
+}
+
+/* .cards-property-info :not(.fa) {
+    background-color: #120E43;
+    color: #fff;
+} */
+
+/* .cards-property-info .card-1 {
+        background-color: #00cec9;
+        color: #fff;
+    }
+    
+    .cards-property-info .card-2 {
+        background-color: #9c88ff;
+        color: #fff;
+    }
+    
+    .cards-property-info .card-3 {
+        background-color: #ff6b6b;
+        color: #fff;
+    }
+    
+    .cards-property-info .card-4 {
+        background-color: #4bcffa;
+        color: #fff;
+    } */
+
+.property-profile-pic {
+  border-radius: 25px;
+}
+
+/* .position-fixed-property {
+        position: fixed;
+    } */
+
+@media (min-width: 768px) {
+  .sticky {
+    position: fixed;
+    top: 100px;
+    height: 100%;
+    z-index: 10;
+  }
+}
+
+.profile-pic-card-header {
+  width: 80px;
+  height: 80px;
+  border-radius: 25px;
+  position: absolute;
+  right: 10px;
+  /* transform: translate(50%, -50%); */
+  z-index: 100;
+}
+
+.position-fixed-property .card-header {
+  background-color: #4f5962;
+  color: #fff;
+}
+
+.property .card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.property i {
+  color: #000;
+}
+
+.who-section {
+  margin-top: 25px;
+}
+
+/*listing page images big screens*/
+
+@media only screen and (min-width: 900px) {
+  .img-listing {
+    min-height: 280px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .img-listing {
+    max-height: 280px;
+  }
+}
+
+.circular--square {
+  border-radius: 50px;
+}
+
+.circular--square:hover {
+  transform: scale(1.05);
+}
+
+#featured {
+  cursor: pointer;
+}
+
+.profile-pic-profile-page {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.modern-section {
+  margin-bottom: 50px;
+}
+
+.modern-section {
+  background: url("../../pictures/norbert-levajsics-oTJ92KUXHls-unsplash.jpg");
+  height: auto;
+}
+
+.modern-section .btn {
+  background-color: #f15e75;
+  color: #fff;
+}
+
+.modern-title {
+  font-family: "Rubik", sans-serif;
+}
+
+.modern-price {
+  font-family: "Rubik", sans-serif;
+}
+
+@media only screen and (min-width: 900px) {
+  .public-profile-name {
+    font-size: 25px;
+  }
+}
+
+/*bg*/
+@media only screen and (min-width: 900px) {
+  .img-profile {
+    border-radius: 50px;
+    min-height: 150px;
+  }
+}
+/*sm*/
+@media only screen and (max-width: 900px) {
+  .img-profile {
+    border-radius: 20px;
+    min-height: 100px;
+    display: inline-block;
+  }
+}
+.user-profile .my-listing-img {
+  max-width: 350px;
+  max-height: 200px;
+}
+.my-booking-img {
+  min-width: 250px;
+  max-width: 350px;
+  min-height: 180px;
+  max-height: 200px;
+}
+/*Review star color*/
+.fa-star {
+  color: #ffd700;
+}
+@media only screen and (min-width: 900px) {
+  .dropdown-menu {
+    right: 0;
+    margin-top: 10px;
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .dropdown-menu {
+    margin-top: 10px;
+    left: 5px;
+  }
+}
+.uploading-message-button {
+  font-size: 12px;
+}
+
+.chat_threads {
+  background-color: #4f5962;
+  color: #fff;
+}
+.my-chats .list-group-item {
+  cursor: pointer;
+  font-size: 18px;
+}
+@media only screen and (max-width: 900px) {
+  .lg-search {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .lg-sm {
+    display: none;
+  }
+}
