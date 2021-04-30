@@ -1,3 +1,4 @@
+//read
 var card_listings = new Promise(function(resolve, reject) {
     var database = firebase.database();
     var properties = database.ref("Properties");
